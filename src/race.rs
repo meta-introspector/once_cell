@@ -453,7 +453,7 @@ mod once_box {
         {
             match self.get() {
                 Some(val) => Ok(val),
-                None => self.init(f)
+                None => self.init(f),
             }
         }
 
